@@ -14,10 +14,12 @@ DOTFILES=(
 CURRENT_DIR=`pwd`
 ZSH_CUSTOM_DIR=.oh-my-zsh/custom
 
-for dotfile in ${DOTFILES[@]} do
+for dotfile in ${DOTFILES[@]}
+do
     ln -sf $CURRENT_DIR/$dotfile $HOME/$dotfile
 done
 
-for custom_file in $(ls $ZSH_CUSTOM_DIR/*.zsh) do
-  ln -sf $CURRENT_DIR/$custom_file $HOME/$custom_file
-end
+for custom_file in $(ls $ZSH_CUSTOM_DIR/*.zsh)
+do
+    ln -sf $CURRENT_DIR/$custom_file $HOME/$custom_file
+done
