@@ -1,6 +1,27 @@
 [user]
-	name = Tomoyuki Yamaguchi
-	email = zjape25@gmail.com
-[github]
-	user = tyamaguc
-	token = f374816ed871fc671018a2c95f318eae
+  name = tomoyuki-yamaguchi
+  email = tomoyuki-yamaguchi@gree.net
+
+[core]
+  excludesfile = ~/.gitignore
+  pager = less
+  editor = emacs
+
+[color]
+  ui = auto
+
+[alias]
+  ci = commit
+  ca = commit -a
+  co = checkout
+  st = status
+  di = diff
+  dc = diff --cached
+  up = pull --rebase
+  amend = commit --amend
+  d1 = diff HEAD^
+  d2 = diff HEAD^^
+  d3 = diff HEAD^^^
+  d4 = diff HEAD^^^^
+  d5 = diff HEAD^^^^^
+  tree = log --graph --pretty=oneline --abbrev-commit --decorate

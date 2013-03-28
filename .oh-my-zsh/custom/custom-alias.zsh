@@ -1,0 +1,8 @@
+alias ls='ls -vF'
+alias ll='ls -avlFG'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias rr='rm -rf'
+alias e='emacsclient'
+alias vagrant='nocorrect vagrant'
