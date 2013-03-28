@@ -11,6 +11,7 @@ DOTFILES=(
  .zshrc
 )
 
+CURRENT_DIR=`pwd`
 ZSH_CUSTOM_DIR=.oh-my-zsh/custom
 
 for dotfile in ${DOTFILES[@]} do
