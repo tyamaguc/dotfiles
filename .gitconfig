@@ -1,6 +1,6 @@
 [user]
   name = tomoyuki-yamaguchi
-  email = tomoyuki-yamaguchi@gree.net
+  email = tomoyuki.yamaguchi@gree.net
 
 [core]
   excludesfile = ~/.gitignore
