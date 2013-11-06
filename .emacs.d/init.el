@@ -85,11 +85,6 @@
 (color-theme-initialize)
 (color-theme-dark-laptop)
 
-;; emacs-server
-(require 'server)
-(unless (server-running-p)
-  (server-start))
-
 ;; haml-mode
 (require 'haml-mode)
 (add-to-list 'auto-mode-alist '("\\.haml$" . haml-mode))
