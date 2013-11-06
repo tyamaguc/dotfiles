@@ -5,7 +5,7 @@
 [core]
   excludesfile = ~/.gitignore
   pager = less
-  editor = emacs
+  editor = emacsclient
 
 [color]
   ui = auto
