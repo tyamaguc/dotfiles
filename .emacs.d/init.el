@@ -85,6 +85,9 @@
 (color-theme-initialize)
 (color-theme-dark-laptop)
 
+;; magit
+(global-set-key (kbd "C-x g") 'magit-status)
+
 ;; haml-mode
 (require 'haml-mode)
 (add-to-list 'auto-mode-alist '("\\.haml$" . haml-mode))
