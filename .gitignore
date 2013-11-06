@@ -1,3 +1,4 @@
 .ruby-version
 TAGS
 .emacs.d/auto-save-list/*
+.emacs.d/ac-comphist.dat
