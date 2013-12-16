@@ -37,3 +37,4 @@ plugins=(git brew ruby rails gem)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+source ~/.mysqlenv/etc/bashrc
