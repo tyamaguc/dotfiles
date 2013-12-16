@@ -7,5 +7,5 @@ export EDITOR="emacsclient"
 export LANG="ja_JP.UTF-8"
 export LC_CTYPE="ja_JP.UTF-8"
 export LESSCHARSET=utf-8
-export PATH=$MYSQL:$HOME/bin:$HOME/.rbenv/bin:/sbin:$PATH
+export PATH=$MYSQL:$HOME/bin:$HOME/.rbenv/bin:/sbin:/usr/local/bin/:$PATH
 eval "$(rbenv init -)"
