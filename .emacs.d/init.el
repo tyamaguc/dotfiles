@@ -36,6 +36,7 @@
 (require 'package)
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives '("ELPA" . "http://tromey.com/elpa/"))
+(add-to-list 'package-archives '("MELPA" . "http://melpa.milkbox.net/packages/"))
 (setq package-user-dir(concat user-emacs-directory "elpa"))
 (package-initialize)
 
