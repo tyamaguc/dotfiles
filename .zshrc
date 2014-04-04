@@ -40,3 +40,9 @@ source $ZSH/oh-my-zsh.sh
 if [ -f ~/.mysqlenv/etc/bashrc ]; then
   source ~/.mysqlenv/etc/bashrc
 fi
+
+#disable autocorrect
+unsetopt correct
+unsetopt correct_all
+
+PATH=$PATH:$HOME/.rvm//bin # Add RVM to PATH for scripting
