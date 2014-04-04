@@ -109,3 +109,9 @@
 (require 'ag)
 (global-set-key (kbd "<f5>") 'ag-project-at-point)
 (global-set-key (kbd "<f6>") 'ag-regexp-project-at-point)
+
+;; wgrep-ag
+(require 'wgrep-ag)
+(autoload 'wgrep-ag-setup "wgrep-ag")
+(add-hook 'ag-mode-hook 'wgrep-ag-setup)
+(define-key ag-mode-map (kbd "r") 'wgrep-change-to-wgrep-mode)
