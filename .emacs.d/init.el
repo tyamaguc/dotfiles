@@ -92,6 +92,9 @@
 (require 'haml-mode)
 (add-to-list 'auto-mode-alist '("\\.haml$" . haml-mode))
 
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+
 ;; rinari
 (setq rinari-tags-file-name "TAGS")
 (add-to-list 'load-path "~/.emacs.d/elpa/rinari-2.10/")
