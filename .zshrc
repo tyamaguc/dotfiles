@@ -44,5 +44,3 @@ fi
 #disable autocorrect
 unsetopt correct
 unsetopt correct_all
-
-PATH=$PATH:$HOME/.rvm//bin # Add RVM to PATH for scripting
