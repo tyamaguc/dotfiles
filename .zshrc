@@ -35,12 +35,3 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(git brew ruby rails gem)
 
 source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
-if [ -f ~/.mysqlenv/etc/bashrc ]; then
-  source ~/.mysqlenv/etc/bashrc
-fi
-
-#disable autocorrect
-unsetopt correct
-unsetopt correct_all
