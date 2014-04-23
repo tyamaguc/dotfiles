@@ -20,7 +20,7 @@
 ;; load-path
 (setq load-path (cons "~/.emacs.d/elisp" load-path))
 (setq load-path (cons "~/.emacs.d/elpa" load-path))
-(setq load-path (cons "~/.rvm/gems/ruby-1.9.3-p194/gems/rcodetools-0.8.5.0/" load-path))
+(setq load-path (cons "~/.rbenv/versions/1.9.3-p362/lib/ruby/gems/1.9.1/gems/rcodetools-0.8.5.0" load-path))
 
 ;; install-elisp
 (require 'install-elisp)
@@ -44,6 +44,14 @@
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-1.4/dict")
 (ac-config-default)
+(global-auto-complete-mode t)
+(setq ac-auto-start 4)
+(setq ac-auto-show-menu 0.5)
+(setq ac-use-comphist t)
+(setq ac-candidate-limit nil)
+(define-key ac-menu-map (kbd "C-n")         'ac-next)
+(define-key ac-menu-map (kbd "C-p")         'ac-previous)
+(define-key ac-completing-map (kbd "<tab>") 'nil)
 
 ;; ruby-mode
 (setq ruby-deep-indent-paren-style nil)
@@ -86,6 +94,10 @@
 (color-theme-initialize)
 (color-theme-dark-laptop)
 
+;; emacs-server
+(require 'server)
+(unless (server-running-p) (server-start))
+
 ;; magit
 (global-set-key (kbd "C-x g") 'magit-status)
 
@@ -105,6 +117,11 @@
 (autoload 'markdown-mode "markdown-mode" "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
+;; plantuml-mode
+(autoload 'plantuml-mode "plantuml-mode" "PlantUML mode" t)
+(add-to-list 'auto-mode-alist '("\\.uml\\'" . plantuml-mode))
+(setq plantuml-jar-path "~/bin/plantuml.jar")
+
 ;; ag
 (require 'ag)
 (global-set-key (kbd "<f5>") 'ag-project-at-point)
@@ -115,3 +132,7 @@
 (autoload 'wgrep-ag-setup "wgrep-ag")
 (add-hook 'ag-mode-hook 'wgrep-ag-setup)
 (define-key ag-mode-map (kbd "r") 'wgrep-change-to-wgrep-mode)
+
+;; smooth-scroll
+(require 'smooth-scroll)
+(smooth-scroll-mode t)
