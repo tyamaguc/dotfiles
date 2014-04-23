@@ -84,7 +84,7 @@
 ;; color-theme
 (require 'color-theme)
 (color-theme-initialize)
-(load-theme 'zenburn t)
+(color-theme-dark-laptop)
 
 ;; magit
 (global-set-key (kbd "C-x g") 'magit-status)
