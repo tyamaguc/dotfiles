@@ -48,9 +48,13 @@
 (setq ac-auto-start 4)
 (setq ac-auto-show-menu 0.5)
 (setq ac-use-comphist t)
+(setq ac-use-menu-map t)
 (setq ac-candidate-limit nil)
-(define-key ac-menu-map (kbd "C-n")         'ac-next)
-(define-key ac-menu-map (kbd "C-p")         'ac-previous)
+(set-face-background 'ac-candidate-face "linen")
+(set-face-underline 'ac-candidate-face "linen")
+(set-face-background 'ac-selection-face "steelblue")
+(define-key ac-menu-map "\C-n" 'ac-next)
+(define-key ac-menu-map "\C-p" 'ac-previous)
 (define-key ac-completing-map (kbd "<tab>") 'nil)
 
 ;; ruby-mode
