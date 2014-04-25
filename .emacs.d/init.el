@@ -14,6 +14,7 @@
 
 ;; config
 (global-set-key "\C-h" 'delete-backward-char)
+(set-face-background 'region "linen")
 (show-paren-mode 1)
 (menu-bar-mode -1)
 
@@ -52,7 +53,7 @@
 (setq ac-candidate-limit nil)
 (set-face-background 'ac-candidate-face "linen")
 (set-face-underline 'ac-candidate-face "linen")
-(set-face-background 'ac-selection-face "steelblue")
+(set-face-background 'ac-selection-face "linen")
 (define-key ac-menu-map "\C-n" 'ac-next)
 (define-key ac-menu-map "\C-p" 'ac-previous)
 (define-key ac-completing-map (kbd "<tab>") 'nil)
@@ -140,3 +141,8 @@
 ;; smooth-scroll
 (require 'smooth-scroll)
 (smooth-scroll-mode t)
+
+;; expand-region
+(require 'expand-region)
+(global-set-key (kbd "C-w") 'er/expand-region)
+(global-set-key (kbd "M-w") 'er/contract-region)
