@@ -21,7 +21,7 @@
 ;; load-path
 (setq load-path (cons "~/.emacs.d/elisp" load-path))
 (setq load-path (cons "~/.emacs.d/elpa" load-path))
-(setq load-path (cons "~/.rbenv/versions/1.9.3-p362/lib/ruby/gems/1.9.1/gems/rcodetools-0.8.5.0" load-path))
+(setq load-path (cons "~/.rbenv/versions/1.9.3-p545/bingems/rcodetools-0.8.5.0" load-path))
 
 ;; install-elisp
 (require 'install-elisp)
