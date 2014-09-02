@@ -144,8 +144,3 @@
 ;; smooth-scroll
 (require 'smooth-scroll)
 (smooth-scroll-mode t)
-
-;; expand-region
-(require 'expand-region)
-(global-set-key (kbd "C-w") 'er/expand-region)
-(global-set-key (kbd "M-w") 'er/contract-region)
