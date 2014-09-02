@@ -75,6 +75,9 @@
       (indent-line-to indent)
       (when (> offset 0) (forward-char offset)))))
 
+;; rubocop
+(add-hook 'ruby-mode-hook 'rubocop-mode)
+
 ;; anything
 (require 'anything)
 (require 'anything-rcodetools)
